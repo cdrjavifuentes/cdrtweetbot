@@ -5,7 +5,7 @@ config = require('./config');
 
 var Twitter = new twit(config);
 
-var retweet = require('./api/retweet')
+const retweet = require('./api/retweet')
 
 var hastag = '#cdr115'
 
