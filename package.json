@@ -2,7 +2,7 @@
   "name": "tweeter_bot",
   "version": "1.0.0",
   "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
-  "main": "bots.js",
+  "main": "index.js",
   "repository": "",
   "author": "Javier Fuentes <cdt¡rjavifuentes@hotmail.com>",
   "dependencies": {
