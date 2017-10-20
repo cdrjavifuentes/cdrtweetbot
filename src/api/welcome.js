@@ -33,7 +33,7 @@ const welcome = ()  =>{
                 }
                 
             }
-        else{
+        }else{
             console.log('Something went wrong while SEARCHING...');   
         }
         
