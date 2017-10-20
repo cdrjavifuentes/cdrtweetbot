@@ -11,7 +11,7 @@ var old_followers = [];
 
 // Send a DM to new followers
 
-const welcome = ()  =>{
+const welcome = ()  => {
     
     var params = {
         screen_name: '115cdr'
@@ -44,7 +44,7 @@ const welcome = ()  =>{
         }
         
         
-    }
+    });
 }
 
 module.exports = welcome
