@@ -21,13 +21,13 @@ const welcome = ()  => {
     Twitter.get('followers/list', params, function(err, data) {
     
         if (!err) {
-            if(data.statuses.length == 0){
+            if(data.users.length == 0){
                 console.log('User not found');
             }
             else{
-                for (let i = 0; i<= data.statuses.length; i++){
+                for (let i = 0; i<= data.users.length; i++){
                     
-                    var follower = data.statuses[i].id_str;
+                    var follower = data.users[i].id_str;
                     old_followers.push(follower);
                     console.log('New follower added ')
                 }
