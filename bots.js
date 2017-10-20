@@ -48,9 +48,13 @@ var retweet = function() {
                 });
 }
 // grab & retweet as soon as program is running...
+console.log('Antes de la función')
 retweet();
+console.log('Despues de función')
 // retweet in every 5 minutes
 setInterval(retweet, 300000);
+
+
 
 // FAVORITE BOT====================
 
