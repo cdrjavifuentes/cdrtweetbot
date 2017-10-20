@@ -10,7 +10,9 @@ var hastag = '#cdr115'
 // RETWEET BOT ==========================
 
 // find latest tweet according the query 'q' in params
-var retweet = function() {
+
+const retweet = () => {
+//var retweet = function() {
     var params = {
     q: hastag,  // REQUIRED
     result_type: 'recent',
@@ -47,3 +49,5 @@ var retweet = function() {
                 }
                 });
 }
+
+module.exports = retweet
