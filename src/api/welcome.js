@@ -3,7 +3,7 @@ var
 twit = require('twit'),
 config = require('../config');
 
-var Twitter = new twit(config);
+var Twitter = new twit(config.twitterKeys);
 
 var old_followers = [];
 
@@ -25,11 +25,18 @@ const welcome = ()  => {
                 console.log('User not found');
             }
             else{
-                for (let i = 0; i<= data.users.length; i++){
+                for (let i = 0; i< data.users.length; i++){
                     
-                    var follower = data.users[i].id_str;
-                    old_followers.push(follower);
-                    console.log('New follower added ')
+                    
+                    
+                    var follower = data.users[i].screen_name;
+                    
+                    
+                        old_followers.push(follower);
+                        console.log('New follower added ')
+                        
+                    
+                    
                 }
                 
             }
@@ -38,7 +45,7 @@ const welcome = ()  => {
         }
         
         console.log(old_followers.length);
-        for (let i= 0; i<= old_followers.length; i++){
+        for (let i= 0; i< old_followers.length; i++){
             console.log(old_followers[i])
             
         }

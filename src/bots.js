@@ -3,7 +3,7 @@ var
 twit = require('twit'),
 config = require('./config');
 
-var Twitter = new twit(config);
+var Twitter = new twit(config.twitterKeys);
 
 const retweet = require('./api/retweet')
 const welcome = require('./api/welcome')
@@ -20,6 +20,7 @@ setInterval(retweet, 300000);
 console.log('Antes welcome');
 
 welcome();
+setInterval(welcome, 60000)
 console.log('despues welcome');
 
 

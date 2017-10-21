@@ -3,7 +3,7 @@ var
 twit = require('twit'),
 config = require('../config');
 
-var Twitter = new twit(config);
+var Twitter = new twit(config.twitterKeys);
 
 var hastag = '#cdr115'
 
