@@ -7,7 +7,8 @@ var Twitter = new twit(config.twitterKeys);
 
 const retweet = require('./api/retweet')
 const welcome = require('./api/welcome')
-const findOportunities = require('./api/findOportunities')
+const findOpportunities = require('./api/findOpportunities')
+const sendSlackMessage = require('./api/sendSlackMessage')
 
 var hastag = '#cdr115'
 
@@ -26,13 +27,15 @@ setInterval(welcome, 60000)
 console.log('despues welcome');
 */
 
+
+//sendSlackMessage();
 // grab & retweet as soon as program is running...
 console.log('Antes de la función findOportunities')
-findOportunities();
-console.log('Despues de función findOportunities')
+var since_id = findOpportunities();
+console.log('Despues de función findOportunities ' + since_id)
 // retweet in every 5 minutes
-setInterval(findOportunities, 300000);
-
+setInterval(() => findOpportunities(), 10000);
+//setInterval(() => findOpportunities(), 10000)
 
 // grab & 'favorite' as soon as program is running...
 //favoriteTweet();
