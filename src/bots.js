@@ -7,9 +7,11 @@ var Twitter = new twit(config.twitterKeys);
 
 const retweet = require('./api/retweet')
 const welcome = require('./api/welcome')
+const findOportunities = require('./api/findOportunities')
 
 var hastag = '#cdr115'
 
+/*
 // grab & retweet as soon as program is running...
 console.log('Antes de la función retweet')
 retweet();
@@ -22,7 +24,14 @@ console.log('Antes welcome');
 welcome();
 setInterval(welcome, 60000)
 console.log('despues welcome');
+*/
 
+// grab & retweet as soon as program is running...
+console.log('Antes de la función findOportunities')
+findOportunities();
+console.log('Despues de función findOportunities')
+// retweet in every 5 minutes
+setInterval(findOportunities, 300000);
 
 
 // grab & 'favorite' as soon as program is running...

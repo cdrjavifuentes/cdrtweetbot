@@ -14,7 +14,7 @@ var old_followers = [];
 const welcome = ()  => {
     
     var params = {
-        screen_name: '115cdr'
+        screen_name: '115cdr<11'
     
     }
     
