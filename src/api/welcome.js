@@ -29,6 +29,7 @@ const welcome = ()  => {
                 console.log('User not found');
             }
             else{
+                var iCursor = data.next_cursor;
                 for (let i = 0; i< data.users.length; i++){
                     
                     

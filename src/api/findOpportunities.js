@@ -65,6 +65,7 @@ escribiendo post
                         //console.log('Founded twits '+retweetId);
                         //console.log(' text '+ text );
                         console.log(' fullText '+ fullText );
+                        sendSlackMessage(fullText);
                         //console.log(' from '+ userName );
                         //console.log(' description '+ userDescription );
                       
