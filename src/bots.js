@@ -27,8 +27,9 @@ console.log('Antes welcome');
 console.log('despues welcome');
 
 console.log('Antes de la función findOportunities')
-var since_id = findOpportunities();
-sendSlackMessage();
+//var since_id = findOpportunities();
+setInterval(() => findOpportunities(), 10000);
+//sendSlackMessage();
 // grab & retweet as soon as program is running...
 //
 

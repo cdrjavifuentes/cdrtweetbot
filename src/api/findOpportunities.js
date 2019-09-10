@@ -2,6 +2,7 @@
 var
 twit = require('twit'),
 config = require('../config');
+const sendSlackMessage = require('./sendSlackMessage')
 
 var Twitter = new twit(config.twitterKeys);
 
