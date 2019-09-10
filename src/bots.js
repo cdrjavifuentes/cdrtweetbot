@@ -19,22 +19,22 @@ retweet();
 console.log('Despues de función retweet')
 // retweet in every 5 minutes
 setInterval(retweet, 300000);
-
+*/
 console.log('Antes welcome');
 
 welcome();
 setInterval(welcome, 60000)
 console.log('despues welcome');
-*/
+
 
 
 //sendSlackMessage();
 // grab & retweet as soon as program is running...
-console.log('Antes de la función findOportunities')
-var since_id = findOpportunities();
-console.log('Despues de función findOportunities ' + since_id)
+//console.log('Antes de la función findOportunities')
+//var since_id = findOpportunities();
+//console.log('Despues de función findOportunities ' + since_id)
 // retweet in every 5 minutes
-setInterval(() => findOpportunities(), 10000);
+//setInterval(() => findOpportunities(), 10000);
 //setInterval(() => findOpportunities(), 10000)
 
 // grab & 'favorite' as soon as program is running...

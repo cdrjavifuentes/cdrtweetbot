@@ -19,7 +19,8 @@ const findOpportunities = () => {
     q: hastag,  // REQUIRED
     result_type: 'recent',
     lang: 'es',
-    since_id : valor
+    since_id : valor,
+    tweet_mode: 'extended'
     }
 
     
@@ -56,12 +57,14 @@ escribiendo post
                             console.log('New min Value '+new_min_value);
                         }
                         var text = data.statuses[i].text;
+                        var fullText = data.statuses[i].full_text;
                         var userName = data.statuses[i].user.name;
                         var userDescription = data.statuses[i].user.description;
                         var userLocation = data.statuses[i].user.location;
                         // Tell TWITTER to retweet
                         //console.log('Founded twits '+retweetId);
                         //console.log(' text '+ text );
+                        console.log(' fullText '+ fullText );
                         //console.log(' from '+ userName );
                         //console.log(' description '+ userDescription );
                       
