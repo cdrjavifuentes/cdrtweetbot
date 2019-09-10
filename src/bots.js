@@ -30,6 +30,7 @@ console.log('Antes de la función findOportunities')
 //var since_id = findOpportunities();
 //setInterval(() => findOpportunities(), 10000);
 //sendSlackMessage();
+setInterval(() => sendSlackMessage(), 10000);
 // grab & retweet as soon as program is running...
 //
 
