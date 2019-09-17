@@ -5,7 +5,7 @@ config = require('../config');
 
 var Twitter = new twit(config.twitterKeys);
 
-var old_followers = ['cdrjavifuentes'];
+var old_followers = ['cdrjavifuentes1'];
 
 // WELCOME BOT ==========================
 
@@ -18,7 +18,7 @@ var old_followers = ['cdrjavifuentes'];
 const welcome = ()  => {
     
     var params = {
-        screen_name: 'ReportaroES'
+        screen_name: '115cdr'
     
     }
     
@@ -81,7 +81,7 @@ const welcome = ()  => {
                        console.log(params.screen_name + " says: " + replyTo );
 
 
-                       // Twitter.post('direct_messages/events/new',replyTo)
+                       Twitter.post('direct_messages/events/new',replyTo)
                         
                     }
                     

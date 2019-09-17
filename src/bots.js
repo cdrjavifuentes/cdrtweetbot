@@ -7,6 +7,7 @@ var Twitter = new twit(config.twitterKeys);
 
 const retweet = require('./api/retweet')
 const welcome = require('./api/welcome')
+const sendWelcomeDM = require('./api/sendWelcomeDM')
 const findOpportunities = require('./api/findOpportunities')
 const sendSlackMessage = require('./api/sendSlackMessage')
 
@@ -20,11 +21,17 @@ console.log('Despues de función retweet')
 // retweet in every 5 minutes
 setInterval(retweet, 300000);
 */
-console.log('Antes welcome');
+//console.log('Antes welcome');
 
 //welcome();
 //setInterval(welcome, 60000)
-console.log('despues welcome');
+//console.log('despues welcome');
+
+console.log('Antes sedWelcomeDM');
+
+sendWelcomeDM();
+//setInterval(sendWelcomeDM, 60000)
+console.log('despues sedWelcomeDM');
 
 console.log('Antes de la función findOportunities')
 //var since_id = findOpportunities();
